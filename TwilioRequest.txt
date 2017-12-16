@@ -1,0 +1,8 @@
+
+Use the below code to create Twilio responses in the Twilio dashboard under build. The Body is the text in the message. You must put in your own twilio account and phone numbers.
+
+curl 'https://api.twilio.com/2010-04-01/Accounts/<your_twilio_account_ID>/Messages.json' -X POST \
+--data-urlencode 'To=+<sender_number>' \
+--data-urlencode 'From=+<receiver_number>' \
+--data-urlencode 'Body=Photo not appropriate. - Photo-Link' \
+-u <your_twilio_account_ID>
