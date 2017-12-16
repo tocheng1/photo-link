@@ -1,0 +1,3 @@
+# Photo-link
+## The Idea
+Photo-link is a service for turning photos sent from a phone into a link that can be shared with others. Some phones and phone services have trouble sending and receiving photos, so this would help those who may not be able to send a photo directly to someone. The way it works is that a user would send a photo to a number that is associated with Twilio. Once the image is received, it would be analyzed by AWS Rekognition, to make sure it is not inappropriate. If it is okay, the photo goes through API Gateway to be stored and hosted using S3 and DynamoDB. A link to that photo is then sent back to the sender. This link can be shared to others, so they can see the photo. 
